@@ -1,0 +1,146 @@
+// importing the mixins file
+@import "mixins";
+
+
+// defining colors
+$rockingRed:(
+rr1:#E44236,
+rr2:#EA425C,
+rr3:#E8290B
+);
+$beautifulBlue:(
+bb1:#3498DB,
+bb2:#25CCF7,
+bb3:#3C40C6
+);
+$golfGreen:(
+gg1:#45CE30,
+gg2:#019031,
+gg3:#218F76
+);
+$freshYellow:(
+fy1:#EEC213,
+fy2:#F3CC79,
+fy3:#E1DA00
+);
+$oldGrey:(
+og1:#7B8788,
+og2:#47535E,
+og3:#758AA2
+);
+
+
+// defining functions for colors
+@function rr($a){
+  @return map-get($rockingRed,$a);
+}
+@function bb($a){
+  @return map-get($beautifulBlue,$a);
+}
+@function gg($a){
+  @return map-get($golfGreen,$a);
+}
+@function fy($a){
+  @return map-get($freshYellow,$a);
+}
+@function og($a){
+  @return map-get($oldGrey,$a);
+}
+
+
+// media queries
+
+
+// for device of xs width
+body{
+@include body();
+header{
+h1{
+  @include header-h1();
+}
+.fa-file-text-o{
+  @include header-fa-file-text-o();
+}
+form{
+  .am{
+    @include header-form-am();
+  }
+  .gnt{
+    @include header-form-gnt();
+  }
+  .gnt:hover{
+    @include header-form-gnt();
+  }
+}
+}
+h5{
+  font-family: 'Dancing Script', cursive;
+}
+section{
+  .container{
+    @include section-container();
+  h2{
+    @include c-h1();
+  }
+  p{
+    @include c-p();
+  }
+  h4{
+  @include c-h4();
+  }
+  .esp{
+    font-family: 'ZCOOL XiaoWei', serif;
+  }
+  .lu{
+    list-style-type: none;
+    li{
+      @include lu-li();
+    }
+  }
+  h3{
+    @include lu-h3();
+  }
+}
+}
+}
+
+// for device of sm width
+@media (min-width:576px){
+  body{
+
+  }
+}
+
+
+// for device of md width
+@media (min-width:768px){
+  body{
+section{
+  .container{
+    background-color: #fff;
+  h1{
+  @include c-h1();
+  }
+  p{
+    @include cmd-p();
+  }
+}
+}
+  }
+}
+
+
+// for device of lg width
+@media (min-width:992px){
+  body{
+
+  }
+}
+
+
+// for device of xl width
+@media (min-width:1200px){
+  body{
+
+  }
+}

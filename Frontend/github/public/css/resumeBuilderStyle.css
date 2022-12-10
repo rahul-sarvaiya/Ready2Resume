@@ -1,0 +1,69 @@
+body {
+ 
+  background-size: cover; }
+  body header h1 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2em;
+    color: #333333; }
+  body header .fa-file-text-o {
+    font-size: 2em;
+    background: linear-gradient(#FF512F, #ee0979);
+    
+    color: transparent; }
+  body header form .am {
+    height: 45px;
+    border: 2px solid #444444; }
+  body header form .gnt {
+    background-color: #333333;
+    color: #fff;
+    font-size: 1.3em; }
+  body header form .gnt:hover {
+    background-color: #333333;
+    color: #fff;
+    font-size: 1.3em; }
+  body h5 {
+    font-family: 'PT Sans', sans-serif; 
+  }
+  body section .container {
+    
+    background-color: #fff; }
+    body section .container h2 {
+       font-family: 'PT Sans', sans-serif;
+      color: #333333; }
+    body section .container p {
+      color: #333333;
+      font-family: 'PT Sans', sans-serif; }
+    body section .container h4 {
+      font-family: 'PT Sans', sans-serif;
+      color: #333333; }
+    body section .container .esp {
+       font-family: 'PT Sans', sans-serif; }
+    body section .container .lu {
+      list-style-type: none; }
+      body section .container .lu li {
+         font-family: 'PT Sans', sans-serif;
+        font-size: 1.3em;
+        color: #ee0979; }
+    body section .container h3 {
+      color: #990003;
+       font-family: 'PT Sans', sans-serif; }
+
+       @media print {
+        #printPage {
+          display: none;
+        }
+      }
+
+@media (min-width: 768px) {
+  body section .container {
+    background-color: #fff; }
+    body section .container h1 {
+      font-family: 'PT Sans', sans-serif;
+      color: #333333; }
+    body section .container p {
+      color: #333333;
+      font-family: 'PT Sans', sans-serif;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 1.2em; } }
+
+/*# sourceMappingURL=resumeBuilderStyle.css.map */
